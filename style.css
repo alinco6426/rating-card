@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Overpass&display=swap');
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'overpass';
+}
+*{
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+}
+.content{
+    display: grid;
+    justify-content: center;
+    position: relative;
+}
+.rate-content{
+    background-color:  hsl(213, 19%, 18%);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+}
+.rate-content span{
+    background-color:hsl(216, 12%, 54%) ;
+    border-radius: 50%;
+    width: 40px ;
+    height: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color:  hsl(0, 0%, 100%);
+}
+p{
+    color: hsl(217, 12%, 63%);
+}
+button:not(.Submit){
+    background-color: hsl(216, 12%, 54%) ;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    width: 50px ;
+    height: 50px;
+    display: inline;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+.Submit{
+    display: block;
+    width: 100%;
+    background-color: hsl(25, 97%, 53%) ;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: large;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+button:not(.Submit):hover{
+    background-color: hsl(25, 97%, 53%) ;
+    color: white;
+    transition: all 0.6s ;
+}
+.Submit:hover{
+    background-color: white;
+    color:  hsl(25, 97%, 53%);
+    transition: all 0.6s ;
+}
+.thank-card{
+    background-color:  hsl(213, 19%, 18%);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 400px;
+    position: absolute;
+    left: 35%;
+    display: none;
+}
+#review{
+    color:  hsl(25, 97%, 53%);
+    background-color: hsl(216, 12%, 54%) ;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+@media screen and (max-width:600px) {
+    .content{
+        display: block;
+        justify-content: none;
+        width: 100%;
+        padding: 0;
+    }
+    .rate-content{
+        width: 100%;
+        padding: 40px;
+        height: 100%;
+    }
+    button:not(.Submit){
+        width: 15% ;
+        height: 60px;
+    }
+    .thank-card{
+        width:100%;
+        padding: 40px;
+        left: 0;
+        display: none;
+        top: 0;
+    }
+}
